@@ -44,8 +44,8 @@ let allTypes = {
 
     string: "test", bytes: "ff", bool: true, array: [2, 1], fixed_array: [1, 0],
     object_id_type: "1.1.1", //vote_id: "2:1",
-    asset: "0.000 STEEM",
-    static_variant: [[0, {from: "", to: "", amount: "0.000 STEEM", memo: "" }]],
+    asset: "0.000 TESTS",
+    static_variant: [[0, {from: "", to: "", amount: "0.000 TESTS", memo: "" }]],
     map: [[4,3], [2,1]],
     set: [2,1],
 

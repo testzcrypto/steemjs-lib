@@ -267,17 +267,17 @@ var ecc_config = {
 };
 
 module.exports = _this = {
-    core_asset: "STEEM",
+    core_asset: "TESTS",
     vest_asset: "VESTS",
-    dollar_asset: "SBD",
-    address_prefix: "STM",
+    dollar_asset: "TBD",
+    address_prefix: "TST",
     expire_in_secs: 15,
     expire_in_secs_proposal: 24 * 60 * 60,
     networks: {
         Steem: {
-            core_asset: "STEEM",
-            address_prefix: "STM",
-            chain_id: "0000000000000000000000000000000000000000000000000000000000000000"
+            core_asset: "TESTS",
+            address_prefix: "TST",
+            chain_id: "18dcf0a285365fc58b71f18b3d3fec954aa0c141c44e4e5cb4cf777b9eab274e"
         }
     },
     /** Set a few properties for known chain IDs. */
@@ -315,9 +315,9 @@ module.exports = _this = {
     },
 
     reset: function reset() {
-        _this.core_asset = "STEEM";
-        _this.address_prefix = "STM";
-        ecc_config.address_prefix = "STM";
+        _this.core_asset = "TESTS";
+        _this.address_prefix = "TST";
+        ecc_config.address_prefix = "TST";
         _this.expire_in_secs = 15;
         _this.expire_in_secs_proposal = 24 * 60 * 60;
 
@@ -3923,7 +3923,7 @@ Types.asset = {
         var debug = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
 
         if (debug.use_default && object === undefined) {
-            return "0.000 STEEM";
+            return "0.000 TESTS";
         }
         return object;
     }
